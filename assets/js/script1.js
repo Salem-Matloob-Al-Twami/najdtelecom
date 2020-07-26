@@ -625,7 +625,7 @@ function getBranchData() {
               {
                 valueAr: "شارع الملك سلمان ",
                 valueDelimiter: " - ",
-                valueEn: "King Salman Rd.",
+                valueEn: "King Salman Road",
               },
               {
                 valueAr: "",
@@ -1092,28 +1092,24 @@ function apply(elements) {
 
 function body(elements) {
   var $_body = "";
-  $_body += createHeader();
-  elements[0].header.forEach((header, idx) => {
-    $_body += createBodyHeader(header);
 
-    elements[1].body.forEach((body) => {
-      if (idx === body.length - 1) {
+  elements[1].body.forEach((element) => {
+    $_body += createHeader();
+    element.forEach((body, idx) => {
+      $_body += createBodyHeader(elements[0].header[idx]);
+      if (idx === element.length - 1) {
         $_body += createCopyButton(
-          body[idx].valueAr,
-          body[idx].valueDelimiter,
-          body[idx].valueEn
+          body.valueAr,
+          body.valueDelimiter,
+          body.valueEn
         );
       } else {
-        $_body += createBody(
-          body[idx].valueAr,
-          body[idx].valueDelimiter,
-          body[idx].valueEn
-        );
+        $_body += createBody(body.valueAr, body.valueDelimiter, body.valueEn);
       }
+      $_body += closeBodyHeader();
     });
-    $_body += closeBodyHeader();
+    $_body += closeHeader();
   });
-  $_body += closeHeader();
 
   return $_body;
 }

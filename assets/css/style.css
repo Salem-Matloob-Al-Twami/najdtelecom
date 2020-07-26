@@ -359,6 +359,14 @@ header-area
     color: #f3f3f3;
 }
 
+.title a {
+    text-decoration: none;
+}
+
+.title a span:hover {
+    color: #e2ded3;
+}
+
 .logo a {
     font-size: 24px;
     line-height: 1.5;
