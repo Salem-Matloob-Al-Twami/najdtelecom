@@ -1,12 +1,6 @@
 /* **********************************
 Reset CSS
 ************************************** */
-@font-face {
-  font-family: "flat-jooza";
-  src: url(../fonts/flat-jooza-regular.woff?1ce8c264d0bcb7a8e75234ee8f51b608)
-    format("woff");
-}
-
 html,
 body,
 div,

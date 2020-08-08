@@ -6,6 +6,12 @@
   src: url(../../fonts/Material-Icons.woff2) format("woff2");
 }
 
+@font-face {
+  font-family: "flat-jooza";
+  src: url(../../fonts/flat-jooza-regular.woff?1ce8c264d0bcb7a8e75234ee8f51b608)
+    format("woff");
+}
+
 .material-icons {
   font-family: "Material Icons";
   font-weight: normal;
