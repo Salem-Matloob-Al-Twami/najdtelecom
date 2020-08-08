@@ -1,6 +1,11 @@
 /* **********************************
 Reset CSS
 ************************************** */
+@font-face {
+  font-family: "flat-jooza";
+  src: url(/assets/fonts/flat-jooza-regular.woff?1ce8c264d0bcb7a8e75234ee8f51b608)
+    format("woff");
+}
 
 html,
 body,
@@ -89,6 +94,10 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+}
+
+body {
+  font-family: "flat-jooza" !important;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -365,7 +374,7 @@ header-area
   text-align: left;
   width: 80%;
   float: left;
-  padding: 0 15px;
+  padding: 0 5px;
 }
 
 .title span {
@@ -448,8 +457,15 @@ footer-area
 }
 .zid-footer-link {
   color: rgb(74, 74, 74);
+  font-size: 1.2em;
 }
 
 .material-icons.favorite:before {
   content: "\e87d";
+}
+
+.fab,
+.fas {
+  font-size: 1.5em;
+  padding: 5px;
 }
