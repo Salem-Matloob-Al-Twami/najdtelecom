@@ -212,6 +212,17 @@ Tab
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .zid-footer-link {
+    font-size: 0.8em;
+  }
+
+  .fab,
+  .fas {
+    font-size: 1.2em;
+  }
+  h1 {
+    font-size: 24px;
+  }
 }
 
 /* **************** 

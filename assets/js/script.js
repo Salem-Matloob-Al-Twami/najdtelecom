@@ -8,7 +8,7 @@ jQuery(document).ready(function () {
   // loader
   setTimeout(function () {
     $(".loader").fadeOut();
-  }, 500);
+  }, 1000);
 
   var wow = new WOW({
     boxClass: "wow",
@@ -32,7 +32,7 @@ jQuery(document).ready(function () {
   });
 
   $(".scrolltotop").click(function () {
-    $("html,body").animate({ scrollTop: 0 }, 500);
+    $("html,body").animate({ scrollTop: 0 }, 1000);
     return false;
   });
 });
