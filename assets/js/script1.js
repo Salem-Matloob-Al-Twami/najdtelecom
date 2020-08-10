@@ -48,7 +48,7 @@ function copyToClipboard(element) {
 var $_br = "";
 
 $.getScript("./assets/js/data.js", function () {
-  var $_branchData = getBranchData();
+  var $_branchData = data;
   $_branchData.forEach((elements) => {
     apply(elements);
   });
