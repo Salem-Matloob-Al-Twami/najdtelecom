@@ -199,6 +199,18 @@ table {
   color: #606060;
 }
 
+.kBtnCopy:active {
+  background-color: #f3f3f4;
+  border: 1px solid #f3f3f4;
+  color: #606060;
+}
+
+.kBtnCopy:visited {
+  background-color: #f3f3f4;
+  border: 1px solid #f3f3f4;
+  color: #606060;
+}
+
 .clear-text {
   margin-top: 20px;
 }
@@ -266,7 +278,10 @@ loader
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url("../img/loading.gif") 50% 50% no-repeat #fff;
+  background: url("../img/loading.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
 }
 
 .scrolltotop {
@@ -443,11 +458,10 @@ footer-area
   text-align: center;
 }
 
-.copyright p {
+.copyright {
   font-size: 1em;
-  line-height: 1.3;
-  text-align: center;
-  text-transform: uppercase;
+  line-height: 1.8;
+  text-transform: capitalize;
 }
 .zid-footer-link {
   color: rgb(74, 74, 74);

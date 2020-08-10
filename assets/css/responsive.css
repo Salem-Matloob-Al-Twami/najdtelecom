@@ -97,6 +97,9 @@ Tab
 ************** */
 
 @media (max-width: 767px) {
+  .loader {
+    background-size: contain;
+  }
   .footer-nav li a {
     margin: 5px 0;
     display: block;
@@ -140,6 +143,9 @@ Tab
 }
 
 @media (max-width: 575px) {
+  .loader {
+    background-size: contain;
+  }
   .heading h1 {
     font-size: 20px;
   }
@@ -180,6 +186,9 @@ Tab
 }
 
 @media (max-width: 480px) {
+  .loader {
+    background-size: contain;
+  }
   .button_container .menu-icons {
     line-height: 0;
   }
@@ -230,10 +239,19 @@ Mobile
 ************** */
 
 @media (max-width: 375px) {
+  .loader {
+    background-size: contain;
+  }
 }
 
 @media (max-width: 360px) {
+  .loader {
+    background-size: contain;
+  }
 }
 
 @media (max-width: 320px) {
+  .loader {
+    background-size: contain;
+  }
 }
