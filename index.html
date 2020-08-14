@@ -43,42 +43,86 @@
     <!-- loader -->
     <div class="loader"></div>
     <!-- loader -->
-    <!-- header-area -->
-    <header class="header-area slider-con">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <nav class="navigation">
-              <div class="left-menu">
-                <div class="logo">
-                  <a href="index.html"
-                    ><img
-                      class="img-fluid"
-                      src="assets/img/logo.jpeg"
-                      alt="logo"
-                    />
-                  </a>
+    <div id="desktopView">
+      <!-- header-area -->
+      <header class="header-area slider-con">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <nav class="navigation">
+                <div class="left-menu">
+                  <div class="logo">
+                    <a href="index.html"
+                      ><img
+                        class="img-fluid"
+                        src="assets/img/logo.jpeg"
+                        alt="logo"
+                      />
+                    </a>
+                  </div>
+                  <div class="title">
+                    <span dir="rtl">نجد للإتصالات Najd Telecom</span>
+                  </div>
                 </div>
-                <div class="title">
-                  <span dir="rtl">نجد للإتصالات Najd Telecom</span>
-                </div>
-              </div>
-            </nav>
+              </nav>
+            </div>
+          </div>
+          <div class="col-12 kUnderNavStrip">
+            <span dir="rtl">مواقعنا - locations</span>
           </div>
         </div>
-        <div class="col-12 kUnderNavStrip">
-          <span dir="rtl">مواقعنا - locations</span>
+      </header>
+      <!-- header-area -->
+      <div class="clear-text"></div>
+      <!-- body-area -->
+      <section class="body-area">
+        <!-- dynamic content -->
+        <div id="mainContainer" class="container-fluid" dir="rtl"></div>
+      </section>
+      <!-- body-area -->
+    </div>
+
+    <!-- Start Mobile View -->
+    <div id="mobileView" style="display: none;">
+      <header class="header-area slider-con">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <nav class="navigation">
+                <div class="left-menu">
+                  <div class="logo">
+                    <a href="index.html"
+                      ><img
+                        class="img-fluid"
+                        src="assets/img/logo.jpeg"
+                        alt="logo"
+                      />
+                    </a>
+                  </div>
+                  <div class="title">
+                    <span dir="rtl">نجد للإتصالات</span><br />
+                    <span>Najd Telecom</span>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="col-12 kUnderNavStrip">
+            <span dir="rtl">مواقعنا - locations</span>
+          </div>
         </div>
-      </div>
-    </header>
-    <!-- header-area -->
-    <div class="clear-text"></div>
-    <!-- body-area -->
-    <section class="body-area">
-      <!-- dynamic content -->
-      <div id="mainContainer" class="container-fluid" dir="rtl"></div>
-    </section>
-    <!-- body-area -->
+      </header>
+      <!-- header-area -->
+      <div class="clear-text"></div>
+      <!-- body-area -->
+      <section class="body-area">
+        <!-- dynamic content -->
+        <div id="kMobileMainContainer" class="container-fluid" dir="rtl"></div>
+      </section>
+      <!-- body-area -->
+    </div>
+    <!-- End Mobile View -->
+
     <div class="clear-text"></div>
     <!-- footer-area -->
     <footer class="footer-area">
@@ -94,17 +138,17 @@
                     id="footer-social-media-facebook"
                     href="https://www.facebook.com/najdtelecom"
                     target="_blank"
-                    ><span
-                      class="fab fa-facebook-f text-color-primary"
-                    ></span></a
-                ></span>
+                    ><span class="fab fa-facebook-f text-color-primary"></span
+                  ></a>
+                </span>
                 <span
                   ><a
                     id="footer-social-media-twitter"
                     href="https://twitter.com/najdtelecom"
                     target="_blank"
-                    ><span class="fab fa-twitter text-color-primary"></span></a
-                ></span>
+                    ><span class="fab fa-twitter text-color-primary"></span
+                  ></a>
+                </span>
                 <span
                   ><a
                     id="footer-social-media-snapchat"
@@ -112,17 +156,17 @@
                     target="_blank"
                     ><span
                       class="fab fa-snapchat-ghost text-color-primary"
-                    ></span></a
-                ></span>
+                    ></span
+                  ></a>
+                </span>
                 <span
                   ><a
                     id="footer-social-media-instagram"
                     href="https://www.instagram.com/najdtelecom"
                     target="_blank"
-                    ><span
-                      class="fab fa-instagram text-color-primary"
-                    ></span></a
-                ></span>
+                    ><span class="fab fa-instagram text-color-primary"></span
+                  ></a>
+                </span>
                 <span
                   ><a
                     id="footer-social-media-whatsapp"
@@ -136,15 +180,18 @@
                     class="footer-whatsapp"
                     data-original-title=""
                     title=""
-                    ><span class="fab fa-whatsapp text-color-primary"></span></a
-                ></span>
+                  >
+                    <span class="fab fa-whatsapp text-color-primary"></span
+                  ></a>
+                </span>
                 <span
                   ><a
                     id="footer-store-website"
                     href="http://www.najdtelecom.com"
                     target="_blank"
-                    ><span class="fas fa-globe text-color-primary"></span></a
-                ></span>
+                    ><span class="fas fa-globe text-color-primary"></span
+                  ></a>
+                </span>
                 <!---->
               </p>
               <p dir="rtl" class="copyright text-center">
@@ -171,5 +218,6 @@
     <script src="assets/js/jquery.easing.1.3.js"></script>
     <script src="assets/js/smooth-scroll.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/mobile-view-script.js"></script>
   </body>
 </html>

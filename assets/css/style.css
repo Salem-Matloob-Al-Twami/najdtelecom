@@ -1,6 +1,7 @@
 /* **********************************
 Reset CSS
 ************************************** */
+
 html,
 body,
 div,
@@ -136,6 +137,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 .kCity {
   margin: 0;
   max-width: 100%;
@@ -353,6 +355,7 @@ header-area
   background: #ffffff;
   color: #666666;
 }
+
 .kUnderNavStrip {
   background-color: #f3f3f4;
   padding: 15px 0;
@@ -361,6 +364,7 @@ header-area
   color: #666666;
   text-align: center;
 }
+
 .left-menu {
   width: 100%;
   float: left;
@@ -463,6 +467,7 @@ footer-area
   line-height: 1.8;
   text-transform: capitalize;
 }
+
 .zid-footer-link {
   color: rgb(74, 74, 74);
   font-size: 1.2em;
@@ -477,3 +482,24 @@ footer-area
   font-size: 1.5em;
   padding: 5px;
 }
+
+/* start mobile styling */
+
+.kTableMobileBody {
+  padding: 0;
+}
+
+.kMobileLabel {
+  text-align: center;
+  padding: 0;
+  line-height: 5;
+}
+
+.kMobileBody {
+  display: block;
+  text-align: center;
+  background-color: #fff;
+  padding: 15px;
+}
+
+/* end mobile styling */
