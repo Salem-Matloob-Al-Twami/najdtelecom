@@ -72,24 +72,28 @@ function apply(elements) {
 
 function body(elements) {
   var $_body = "";
+  $_body += createHeader();
+  elements[0].header.forEach((header, idx) => {
+    $_body += createBodyHeader(header);
 
-  elements[1].body.forEach((element) => {
-    $_body += createHeader();
-    element.forEach((body, idx) => {
-      $_body += createBodyHeader(elements[0].header[idx]);
-      if (idx === element.length - 1) {
+    elements[1].body.forEach((body) => {
+      if (idx === body.length - 1) {
         $_body += createCopyButton(
-          body.valueAr,
-          body.valueDelimiter,
-          body.valueEn
+          body[idx].valueAr,
+          body[idx].valueDelimiter,
+          body[idx].valueEn
         );
       } else {
-        $_body += createBody(body.valueAr, body.valueDelimiter, body.valueEn);
+        $_body += createBody(
+          body[idx].valueAr,
+          body[idx].valueDelimiter,
+          body[idx].valueEn
+        );
       }
-      $_body += closeBodyHeader();
     });
-    $_body += closeHeader();
+    $_body += closeBodyHeader();
   });
+  $_body += closeHeader();
 
   return $_body;
 }
@@ -140,7 +144,7 @@ function createBody(valueAr, valueDelimiter, valueEn) {
 
 function createCopyButton(valueAr, valueDelimiter, valueEn) {
   var $_copyButton =
-    '<div class="row kBody" style="padding: 9px;">' +
+    '<div class="row kBody kBodyHasButton">' +
     '<button type="button" value="' +
     valueAr +
     '" class="btn btn-primary kBtnCopy" onclick="copyToClipboard(this)">' +

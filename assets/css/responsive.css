@@ -66,14 +66,12 @@ Desktop
   .right-bars {
     display: none;
   }
-
   .left-menu li a {
     opacity: 0 !important;
   }
   .mobile-menu li a {
     opacity: 1 !important;
   }
-
   .button_container .menu-icons {
     display: block;
     color: #fff;
@@ -122,7 +120,6 @@ Tab
   .fo-content p {
     margin-bottom: 15px;
   }
-
   .logo {
     float: left;
     text-align: left;
@@ -161,7 +158,6 @@ Tab
     top: 40%;
     z-index: 2;
   }
-
   .logo {
     float: left;
     text-align: left;
@@ -186,6 +182,34 @@ Tab
 }
 
 @media (max-width: 480px) {
+  /* start mobile styling */
+  #desktopView {
+    display: none;
+  }
+  #mobileView {
+    display: block !important;
+  }
+  .title span {
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: bolder;
+    line-height: 30px;
+  }
+  .kMobileMainContent {
+    margin: 0 0 2px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    color: #000;
+  }
+  .kMobileButton {
+    padding: 2px;
+  }
+  .col-1 .name {
+    font-size: 0.8em;
+  }
+  /* end mobile styling */
   .loader {
     background-size: contain;
   }
@@ -198,7 +222,6 @@ Tab
     color: #fff;
     margin-top: -10px;
   }
-
   .logo {
     float: left;
     text-align: left;
@@ -206,10 +229,6 @@ Tab
   .logo img,
   .title {
     height: 60px;
-  }
-  .title span {
-    line-height: 60px;
-    font-size: 0.8em;
   }
   .title {
     width: 75%;
@@ -224,7 +243,6 @@ Tab
   .zid-footer-link {
     font-size: 0.8em;
   }
-
   .fab,
   .fas {
     font-size: 1.2em;
@@ -241,6 +259,9 @@ Mobile
 @media (max-width: 375px) {
   .loader {
     background-size: contain;
+  }
+  #mobileView {
+    display: block !important;
   }
 }
 
