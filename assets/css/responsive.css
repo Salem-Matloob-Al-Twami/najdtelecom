@@ -87,7 +87,44 @@ Desktop
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) and (min-width: 768px) {
+  /* start mobile styling */
+  #desktopView {
+    display: none;
+  }
+  #mobileView {
+    display: block !important;
+  }
+  .title span {
+    width: 100%;
+    font-size: 2.2em;
+    font-weight: bolder;
+    line-height: 30px;
+  }
+  .kMobileMainContent {
+    margin: 0 0 2px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    color: #000;
+  }
+  .kMobileBody {
+    padding-right: 24px;
+  }
+  .kMobileButton {
+    padding: 2px;
+  }
+
+  .kBody ul li,
+  .kTableMobileBody .name,
+  .kBtnCopy {
+    font-size: 1.8em;
+  }
+  .col-1 .name {
+    font-size: 1.8em;
+  }
+  /* end mobile styling */
 }
 
 /* **************** 
@@ -260,18 +297,29 @@ Mobile
   .loader {
     background-size: contain;
   }
-  #mobileView {
-    display: block !important;
-  }
 }
 
 @media (max-width: 360px) {
+  .col-1 .name,
+  .kTableMobileBody .name,
+  .kBtnCopy {
+    font-size: 0.8em;
+  }
   .loader {
     background-size: contain;
   }
 }
 
 @media (max-width: 320px) {
+  .col-1 .name {
+    font-size: 0.6em;
+  }
+  .title {
+    width: 72%;
+  }
+  .title span {
+    font-size: 1.2em;
+  }
   .loader {
     background-size: contain;
   }
