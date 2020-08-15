@@ -87,7 +87,13 @@ Desktop
   }
 }
 
-@media only screen and (max-width: 768px) and (min-width: 768px) {
+@media only screen and (max-width: 850px) and (min-width: 400px) {
+  #desktopView {
+    display: none;
+  }
+  #mobileView {
+    display: block !important;
+  }
   /* start mobile styling */
   #desktopView {
     display: none;
@@ -99,7 +105,7 @@ Desktop
     width: 100%;
     font-size: 2.2em;
     font-weight: bolder;
-    line-height: 30px;
+    line-height: 1.3;
   }
   .kMobileMainContent {
     margin: 0 0 2px;
@@ -115,7 +121,42 @@ Desktop
   .kMobileButton {
     padding: 2px;
   }
-
+  .kBody ul li,
+  .kTableMobileBody .name,
+  .kBtnCopy,
+  .col-1 .name {
+    font-size: 1.2em;
+  }
+  /* end mobile styling */
+}
+@media only screen and (max-width: 768px) and (min-width: 768px) {
+  /* start mobile styling */
+  #desktopView {
+    display: none;
+  }
+  #mobileView {
+    display: block !important;
+  }
+  .title span {
+    width: 100%;
+    font-size: 2.2em;
+    font-weight: bolder;
+    line-height: 1.3;
+  }
+  .kMobileMainContent {
+    margin: 0 0 2px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    color: #000;
+  }
+  .kMobileBody {
+    padding-right: 24px;
+  }
+  .kMobileButton {
+    padding: 2px;
+  }
   .kBody ul li,
   .kTableMobileBody .name,
   .kBtnCopy {
@@ -165,11 +206,12 @@ Tab
   .title {
     height: 80px;
   }
-  .title span {
-    line-height: 80px;
-  }
   .title {
     width: 80%;
+  }
+  .title span {
+    line-height: 1.3;
+    font-size: 1.7em;
   }
   .left-menu {
     float: left;
@@ -203,11 +245,12 @@ Tab
   .title {
     height: 70px;
   }
-  .title span {
-    line-height: 70px;
-  }
   .title {
     width: 80%;
+  }
+  .title span {
+    line-height: 1.3;
+    font-size: 1.5em;
   }
   .left-menu {
     float: left;
@@ -228,9 +271,9 @@ Tab
   }
   .title span {
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bolder;
-    line-height: 30px;
+    line-height: 1.3;
   }
   .kMobileMainContent {
     margin: 0 0 2px;
@@ -319,6 +362,9 @@ Mobile
   }
   .title span {
     font-size: 1.2em;
+  }
+  .kTableMobileBody {
+    padding-right: 8px;
   }
   .loader {
     background-size: contain;
