@@ -87,7 +87,7 @@ Desktop
   }
 }
 
-@media only screen and (max-width: 850px) and (min-width: 400px) {
+@media only screen and (max-width: 850px) and (min-width: 415px) {
   #desktopView {
     display: none;
   }

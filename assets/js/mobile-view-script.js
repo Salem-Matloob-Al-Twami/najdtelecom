@@ -123,10 +123,12 @@ function createMobileBody(number, street, center, location) {
     '<div class="row kTableMobileBody">' +
     '<span class="name" dir="rtl">' +
     street.valueAr +
+    "&nbsp;" +
     center.valueAr +
     '</span></div><div class="row kTableMobileBody">' +
     '<span class="name" dir="auto">' +
     street.valueEn +
+    "&nbsp;" +
     center.valueEn +
     '</span></div></div><div class="col-3 kMobileButton">' +
     '<button type="button" value="' +
